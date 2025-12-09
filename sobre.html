@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sobre - Eagle Sportswear</title>
+    <style>
+        /* ========= ESTILO BASE (COPIADO DA HOME) ========= */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        :root {
+            --azul: #0072ce;
+            --escuro: #0a0a0a;
+            --cinza: #f5f5f5;
+            --branco: #ffffff;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            margin: 0;
+            background: var(--branco);
+            color: var(--escuro);
+            padding-top: 70px; /* Adicionado padding para o cabeçalho fixo */
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ========= CABEÇALHO (COPIADO DA HOME) ========= */
+        header {
+            background: var(--escuro);
+            color: var(--branco);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+        }
+        .logo {
+        width: 50px; 
+        height: 120px; 
+        position: relative; right: 10px;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .menu a {
+            color: var(--branco);
+            font-weight: 600;
+            transition: 0.2s;
+        }
+        .menu a:hover {
+            color: var(--azul);
+        }
+
+        /* ========= ESTILO DA PÁGINA SOBRE NÓS ========= */
+        .secao-sobre {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+        .secao-sobre h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--azul);
+            margin-bottom: 40px;
+            border-bottom: 3px solid var(--azul);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Seção principal de texto */
+        .missao-historia {
+            text-align: left;
+            margin-bottom: 50px;
+            background: var(--cinza);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .missao-historia h3 {
+            color: var(--azul);
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+        .missao-historia p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Grid para Pilares/Valores (Reutiliza o conceito de grid de produtos) */
+        .pilares-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            text-align: left;
+        }
+        .pilar {
+            background: var(--branco);
+            border: 2px solid var(--azul); /* Borda mais destacada */
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            text-align: center;
+        }
+        .pilar:hover {
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            transform: translateY(-5px);
+        }
+        .pilar h3 {
+            font-size: 1.3rem;
+            color: var(--escuro);
+            margin-bottom: 10px;
+        }
+        .pilar p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.5;
+        }
+        .pilar-icon {
+            font-size: 3rem;
+            color: var(--azul);
+            margin-bottom: 15px;
+            display: block;
+        }
+
+
+        /* ========= RODAPÉ (COPIADO DA HOME) ========= */
+        footer {
+            background: var(--escuro);
+            color: var(--branco);
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .social {
+            margin: 10px 0;
+        }
+        .social a {
+            margin: 0 8px;
+            color: var(--azul);
+            font-weight: 600;
+        }
+        
+        /* Media Query para Responsividade */
+        @media (max-width: 600px) {
+            .pilares-grid {
+                grid-template-columns: 1fr; /* Uma coluna em telas muito pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <header>
+        <nav>
+            <div class="logo"><img src="logo_eagle.png" alt="logo_canto_esquerdo" width="125"></div>
+            <div class="menu">
+                <a href="index.html">Início</a>
+                <a href="produtos_eagle.html">Produtos</a>
+                <!-- Link 'Sobre' ativo -->
+                <a href="sobre.html" style="color: var(--azul);">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="secao-sobre">
+        <h2>Nossa História e Missão</h2>
+
+        <!-- História e Missão -->
+        <div class="missao-historia">
+            <h3>Quem Somos</h3>
+            <p>
+                A Eagle Sportswear nasceu em 2010 com o objetivo de equipar atletas, desde amadores até profissionais, com o melhor em vestuário e acessórios esportivos. Acreditamos que o equipamento certo é fundamental para quebrar barreiras e alcançar o máximo desempenho. Ao longo dos anos, crescemos mantendo nosso compromisso inicial: oferecer qualidade premium e as últimas inovações do mercado.
+            </p>
+            <h3>Nossa Missão</h3>
+            <p>
+                Ser a principal parceira de quem vive e respira esporte. Nossa missão é inspirar e capacitar cada indivíduo a atingir seu potencial máximo, fornecendo produtos que combinam tecnologia, conforto e durabilidade, sempre com o melhor custo-benefício.
+            </p>
+        </div>
+
+        <h2>Nossos Pilares</h2>
+
+        <!-- Pilares/Valores em formato de grid -->
+        <div class="pilares-grid">
+            
+            <div class="pilar">
+                <i class="pilar-icon fas fa-bolt"></i>
+                <h3>Performance e Inovação</h3>
+                <p>Buscamos constantemente as últimas tecnologias e materiais para garantir que nossos produtos proporcionem o máximo de desempenho e resistência em qualquer modalidade.</p>
+            </div>
+
+            <div class="pilar">
+                <i class="pilar-icon fas fa-handshake"></i>
+                <h3>Compromisso com o Cliente</h3>
+                <p>O atleta está no centro de tudo que fazemos. Oferecemos atendimento personalizado e suporte total para garantir a satisfação e a melhor experiência de compra.</p>
+            </div>
+
+            <div class="pilar">
+                <i class="pilar-icon fas fa-leaf"></i>
+                <h3>Sustentabilidade</h3>
+                <p>Adotamos práticas responsáveis, priorizando processos de produção que minimizem o impacto ambiental e promovam a longevidade dos nossos produtos.</p>
+            </div>
+
+        </div>
+        
+        <!-- Pequeno Call to Action -->
+        <div class="missao-historia" style="margin-top: 50px;" >
+            <h3>Faça Parte da Nossa História</h3>
+            <p>
+                Seja qual for o seu esporte, a Eagle Sportswear está pronta para ser sua aliada. Explore nossa linha de produtos de alta performance e descubra como podemos levar seu jogo para o próximo nível.
+            </p>
+            <a href="produtos_eagle.html" style="display: inline-block; background: var(--azul); color: var(--branco); padding: 10px 25px; border-radius: 6px; font-weight: 600; margin-top: 15px; transition: background-color 0.2s;">
+                Ver Produtos
+            </a>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p><strong>Eagle Sportswear</strong> — Tudo para o seu desempenho esportivo</p>
+        <div class="social">
+            <a href="https://www.instagram.com/eagle_sportswear/">Instagram</a> |
+            <a href="https://www.facebook.com/eagle_sportswear">Facebook</a> |
+            <a href="https://www.tiktok.com/@eagle_sportswear">TikTok</a>
+        </div>
+        <p>Endereço: R. Wilhelm Persch, 280 - Centro, Pomerode - SC</p>
+        <p>WhatsApp: (47) 99154-0351</p>
+    </footer>
+
+</body>
+</html>

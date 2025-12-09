@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Produtos - Eagle Sportswear</title>
+    <style>
+        /* ========= ESTILO BASE (COPIADO DA HOME) ========= */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        :root {
+            --azul: #0072ce;
+            --escuro: #0a0a0a;
+            --cinza: #f5f5f5;
+            --branco: #ffffff;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            margin: 0;
+            background: var(--branco);
+            color: var(--escuro);
+            padding-top: 70px; /* Adicionado padding para o cabeçalho fixo */
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ========= CABEÇALHO (COPIADO DA HOME) ========= */
+        header {
+            background: var(--escuro);
+            color: var(--branco);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+        }
+        .logo {
+        width: 50px; 
+        height: 120px; 
+        position: relative; right: 10px;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .menu a {
+            color: var(--branco);
+            font-weight: 600;
+            transition: 0.2s;
+        }
+        .menu a:hover {
+            color: var(--azul);
+        }
+
+        /* ========= ESTILO DE PRODUTOS E LAYOUT DA PÁGINA ========= */
+        .secao-produtos {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .secao-produtos h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--azul);
+            margin-bottom: 40px;
+            border-bottom: 3px solid var(--azul);
+            display: inline-block;
+            padding-bottom: 5px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Grid de Produtos - Reutiliza a classe 'produtos' */
+        .produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adaptado para cards um pouco maiores */
+            gap: 30px;
+        }
+        .produto {
+            background: var(--branco);
+            border: 1px solid var(--cinza);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: 0.3s;
+        }
+        .produto:hover {
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            transform: translateY(-3px);
+        }
+        .produto img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: contain; /* Para que a imagem se ajuste bem */
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .produto h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2rem;
+        }
+        .produto .preco {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #28a745; /* Verde para preço */
+            margin-bottom: 10px;
+        }
+        .produto p {
+            font-size: 0.9rem;
+            color: #555;
+            height: 2.7em; /* Altura fixa para descrição */
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        .produto a.botao-comprar {
+            display: block;
+            background: var(--azul);
+            color: var(--branco);
+            padding: 10px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+        .produto a.botao-comprar:hover {
+            background: #005bb5;
+        }
+
+
+        /* ========= RODAPÉ (COPIADO DA HOME) ========= */
+        footer {
+            background: var(--escuro);
+            color: var(--branco);
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .social {
+            margin: 10px 0;
+        }
+        .social a {
+            margin: 0 8px;
+            color: var(--azul);
+            font-weight: 600;
+        }
+        
+        /* Media Query para Responsividade */
+        @media (max-width: 600px) {
+            .produtos {
+                grid-template-columns: 1fr; /* Uma coluna em telas muito pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><img src="logo_eagle.png" alt="logo_canto_esquerdo" width="125"></div>
+            <div class="menu">
+                <a href="index.html">Início</a>
+                <a href="produtos_eagle.html" style="color: var(--azul);">Produtos</a> <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="secao-produtos">
+        <h2>Todos os Produtos</h2>
+
+        <div class="produtos">
+            
+            <div class="produto">
+                <img src="https://imgcentauro-a.akamaihd.net/660x660/989954N1A11.jpg" alt="Chuteira Nike Mercurial">
+                <h3>Chuteira Nike Mercurial</h3>
+                <p class="preco">R$ 499,90</p>
+                <p>Leve, aderente e perfeita para velocidade. Tecnologia que garante o melhor controle de bola em campo.</p>
+                <a href="#" class="botao-comprar">Ver Detalhes</a>
+            </div>
+
+            <div class="produto">
+                <img src="https://flamengo.vtexassets.com/arquivos/ids/169036/IP8199-1-APPAREL-Photography-Front-View-white.jpg?v=638717723595030000" alt="Camisa Flamengo 2024">
+                <h3>Camisa Flamengo 2024</h3>
+                <p class="preco">R$ 289,90</p>
+                <p>Modelo oficial, tecido dry-fit. Mostre sua paixão pelo time com conforto e estilo.</p>
+                <a href="#" class="botao-comprar">Ver Detalhes</a>
+            </div>
+
+            <div class="produto">
+                <img src="https://imgcentauro-a.akamaihd.net/1300x1300/99053931A9.jpg" alt="Tênis Adidas Lite Racer 4.0">
+                <h3>Tênis Adidas Lite Racer 4.0</h3>
+                <p class="preco">R$ 350,00</p>
+                <p>Conforto e performance para corrida. Amortecimento responsivo para longas distâncias.</p>
+                <a href="#" class="botao-comprar">Ver Detalhes</a>
+            </div>
+            
+            <div class="produto">
+                <img src="https://store.fifa.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FJD8021_1_HARDWARE_Photography_Front%2520Center%2520View_white.png%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201GPYEXET5B7Y61HW8TB4R0YWE%2522%2C%2522tenantId%2522%3A%2522FIFA%2522%257D&w=3840&q=85" alt="Bola de Futebol Oficial">
+                <h3>FIFA World Cup 26™ adidas Trionda Pro Football</h3>
+                <p class="preco">R$ 934,01</p>
+                <p>Aprovada pela FIFA, ideal para jogos em campo e grama sintética.</p>
+                <a href="#" class="botao-comprar">Ver Detalhes</a>
+            </div>
+
+            <div class="produto">
+                <img src="https://imgcentauro-a.akamaihd.net/800x800/M11U0S02A5.jpg" alt="Kit Máscara de Natação Gold Sports Silicone Confort Hd">
+                <h3>Kit Máscara de Natação Gold Sports Silicone Confort Hd</h3>
+                <p class="preco">R$ 99,50</p>
+                <p>Óculos anti-embaçante e touca de silicone.</p>
+                <a href="#" class="botao-comprar">Ver Detalhes</a>
+            </div>
+            
+            <div class="produto">
+                <img src="https://attireluxe.com.br/cdn/shop/files/tenis-de-basquete_700x.webp?v=1744113541" alt="Tênis de Basquete">
+                <h3>Tênis Basquete High Jump</h3>
+                <p class="preco">R$ 420,00</p>
+                <p>Suporte e tração incomparáveis para quadras indoor e outdoor.</p>
+                <a href="#" class="botao-comprar">Ver Detalhes</a>
+            </div>
+
+            </div>
+
+    </section>
+
+    <footer>
+        <p><strong>Eagle Sportswear</strong> — Tudo para o seu desempenho esportivo</p>
+        <div class="social">
+            <a href="https://www.instagram.com/eagle_sportswear/">Instagram</a> |
+            <a href="https://www.facebook.com/eagle_sportswear">Facebook</a> |
+            <a href="https://www.tiktok.com/@eagle_sportswear">TikTok</a>
+        </div>
+        <p>Endereço: R. Wilhelm Persch, 280 - Centro, Pomerode - SC</p>
+        <p>WhatsApp: (47) 99154-0351</p>
+    </footer>
+
+</body>
+</html>

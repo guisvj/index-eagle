@@ -1,0 +1,252 @@
+    <!doctype html>
+    <html lang="pt-BR">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Eagle Sportswear — Tudo para o seu desempenho esportivo</title>
+    <style>
+        /* ========= ESTILO BASE ========= */
+        :root {
+        --azul: #0072ce;
+        --escuro: #0a0a0a;
+        --cinza: #f5f5f5;
+        --branco: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        }
+        body {
+        margin: 0;
+        background: var(--branco);
+        color: var(--escuro);
+        }
+        a {
+        text-decoration: none;
+        color: inherit;
+        }
+
+        /* ========= CABEÇALHO ========= */
+        header {
+        background: var(--escuro);
+        color: var(--branco);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        }
+        nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 4000px;
+        margin: 0 auto;
+        padding: 15px 20px;
+        height: 80px;
+        color: grey;
+        }
+        .logo {
+        width: 50px; 
+        height: 120px; 
+        position: relative; right: 10px;
+        }
+        .menu {
+        display: flex;
+        gap: 20px;
+        }
+        .menu a {
+        color: var(--branco);
+        font-weight: 600;
+        transition: 0.2s;
+        }
+        .menu a:hover {
+        color: var(--azul);
+        }
+
+        /* ========= BANNER ========= */
+        .banner {
+        margin-top: 70px;
+        background: url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1600&q=60') center/cover;
+        color: var(--branco);
+        text-align: center;
+        padding: 100px 20px;
+        }
+        .banner h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        }
+        .banner p {
+        font-size: 1.2rem;
+        }
+
+        /* ========= CATEGORIAS ========= */
+        .categorias {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: auto;
+        object-fit: cover;
+        }
+        .categoria {
+        background: var(--cinza);
+        border-radius: 10px;
+        text-align: center;
+        padding: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        object-fit: cover;
+        }
+        .categoria:hover {
+        transform: scale(1.05);
+        background: var(--azul);
+        color: var(--branco);
+        object-fit: cover;
+        }
+        .categoria img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        object-fit: cover;
+        }
+
+        /* ========= DESTAQUES ========= */
+        .destaques {
+        background: var(--cinza);
+        padding: 40px 20px;
+
+        }
+        .destaques h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        }
+        .produtos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+        }
+        .produto :hover{
+           display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+        padding: 5px 6px;
+        max-width: 1200px;
+        margin: auto;
+        object-fit: contain;
+        transform: scale(1.05);
+        background: var(--azul);
+        color: var(--branco);
+        object-fit: contain;
+        border-radius: 10px;
+        text-align: center;
+        }
+        .produto img {
+        width: 100%;
+        border-radius: 1px;
+        cursor: pointer;
+        }
+        .produto h3 {
+        margin: 10px 0 5px;
+        cursor: pointer;
+        }
+        .produto p {
+        font-size: 0.9rem;
+        color: #555;
+        cursor: pointer;
+        }
+
+        /* ========= RODAPÉ ========= */
+        footer {
+        background: var(--escuro);
+        color: var(--branco);
+        padding: 30px 20px;
+        text-align: center;
+        }
+        .social {
+        margin: 10px 0;
+        }
+        .social a {
+        margin: 0 8px;
+        color: var(--azul);
+        font-weight: 600;
+        }
+    </style>
+    </head>
+    <body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <nav>
+        <div class="logo"> <img src="logo_eagle.png" alt="logo_canto_esquerdo" width="125"></div>
+        <div class="menu">
+            <a href="index.html">Início</a>
+            <a href="produtos_eagle.html">Produtos</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </div>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <h1>Eagle Sportswear — Tudo para o seu desempenho esportivo</h1>
+        <p>Equipamentos e roupas para quem vive o esporte.</p>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section>
+        <div class="categorias">
+        <div class="categoria">
+            <img src="camisa_italia.png" alt="Camisas de Times">
+            <h3>Camisas de Times</h3>
+        </div>
+        <div class="categoria">
+            <img src="chuteira_png.png" alt="Chuteiras">
+            <h3>Chuteiras</h3>
+        </div>
+        <div class="categoria">
+            <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=800&q=60" alt="Tênis">
+            <h3>Tênis</h3>
+        </div>
+        <div class="categoria">
+            <img src="acessorio.png" alt="Acessórios">
+            <h3>Acessórios</h3>
+        </div>
+        </div>
+    </section>
+
+    <!-- DESTAQUES -->
+    <section class="destaques">
+        <h2>Destaques da Semana</h2>
+        <div class="produtos">
+        <div class="produto">
+            <img src="https://flamengo.vtexassets.com/arquivos/ids/169036/IP8199-1-APPAREL-Photography-Front-View-white.jpg?v=638717723595030000" alt="Camisa Flamengo 2024">
+            <h3>Camisa Flamengo 2024</h3>
+            <p>Modelo oficial, tecido dry-fit.</p>
+        </div>
+        <div class="produto">
+            <img src="https://imgcentauro-a.akamaihd.net/660x660/989954N1A11.jpg" alt="Chuteira Nike Mercurial">
+            <h3>Chuteira Nike Mercurial</h3>
+            <p>Leve, aderente e perfeita para velocidade.</p>
+        </div>
+        <div class="produto">
+            <img src="https://imgcentauro-a.akamaihd.net/1300x1300/99053931A9.jpg" alt="Tênis Adidas Lite Racer 4.0">
+            <h3>Tênis Adidas Lite Racer 4.0</h3>
+            <p>Conforto e performance para corrida.</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p><strong>Eagle Sportswear</strong> — Tudo para o seu desempenho esportivo</p>
+        <div class="social">
+        <a href="https://www.instagram.com/eagle_sportswear/">Instagram</a> |
+        <a href="https://www.facebook.com/eagle_sportswear">Facebook</a> |
+        <a href="https://www.tiktok.com/@eagle_sportswear">TikTok</a>
+        </div>
+        <p>Endereço: R. Wilhelm Persch, 280 - Centro, Pomerode - SC</p>
+        <p>WhatsApp: (47) 99154-0351 </p>
+    </footer>
+    </body>
+    </html>
